@@ -191,7 +191,7 @@ export const Dashboard = () => {
                         <div className={style.emptyContainer}>
                        <p className={style.text}>Your search did not match any results.</p>
                             <div className = {style.btn}>
-                                <button className={style.btnReset}>Reset</button>
+                                <button className={style.btnReset} onClick={handleReset}>Reset</button>
                             </div>
                         </div>
                     )}
