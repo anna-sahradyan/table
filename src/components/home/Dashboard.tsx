@@ -103,6 +103,13 @@ export const Dashboard = () => {
 
     const hasData = filteredTestsWithSite.length > 0;
 
+    const handleReset = () => {
+        setSearchTerm('');
+        setInputValue('');
+        setSortColumn(null);
+        setSortDirection('asc');
+        setFilteredTestsWithSite(allTestsWithSite);
+    };
     return (
         <>
             <div className={style.container}>
