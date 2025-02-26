@@ -1,0 +1,39 @@
+
+.inputField {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+
+  .mainInput {
+    background-color: var(--white);
+    width: 100%;
+    border: 1px solid var(--grey-200);
+    max-width: 954px;
+    border-radius: 15px;
+    min-height: 45px;
+    padding-left: 45px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: var(--black-200-30);
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  .testsLength {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--black-200-30);
+  }
+}

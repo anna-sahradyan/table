@@ -1,0 +1,241 @@
+.container {
+  width: 100%;
+  min-height: 790px;
+  padding: 0 52px 48px;
+
+}
+
+.title {
+  padding-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--black-200-100);
+  line-height: 31.69px;
+  font-size: 26px;
+
+}
+
+.tableContent {
+  width: 100%;
+
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+
+
+  & button {
+    width: 100%;
+    max-width: 95px;
+    min-height: 35px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 14.63px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+  }
+}
+
+.rowHead th {
+  margin-bottom: 10px;
+}
+
+.noStyleCell {
+  cursor: pointer;
+  color: var(--grey-900);
+  font-size: 11px;
+  line-height: 12.89px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: var(--grey-100);
+  text-align: center;
+
+  &:first-child {
+    text-align: left;
+    padding-left: 11px;
+  }
+}
+
+.row {
+  cursor: pointer;
+  height: 70px;
+  background-color: var(--white);
+  border-radius: 3px;
+  display: table-row;
+  width: 100%;
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 #00000026;
+
+  }
+
+}
+
+.row th, .row td {
+  text-align: left;
+  border: none;
+
+  &:first-child {
+    text-align: left;
+    padding-left: 11px;
+  }
+}
+
+.rowHead th {
+  padding-bottom: 10px;
+
+}
+
+.rowHead tr {
+  border-spacing: 0 10px;
+}
+
+.sortedColumn svg {
+  vertical-align: middle;
+}
+
+.rotateIcon {
+  transform: rotate(180deg);
+}
+
+.row th,
+.row td {
+  padding: 10px;
+  text-align: center;
+  border: none;
+
+}
+
+.online th:first-child,
+.online td:first-child {
+  border-left: 3px solid #E14165;
+}
+
+.stopped th:first-child,
+.stopped td:first-child {
+  border-left: 3px solid #C2C2FF;
+}
+
+.draft th:first-child,
+.draft td:first-child {
+  border-left: 3px solid #8686FF;
+}
+
+.paused th:first-child,
+.paused td:first-child {
+  border-left: 3px solid #E14165;
+}
+
+.name {
+  color: var(--black-200-60);
+  font-size: 13px;
+  line-height: 15.23px;
+  font-weight: 500;
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.url {
+  text-transform: lowercase;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: var(--gray-blue);
+
+}
+
+.type {
+  color: var(--black-200-80);
+  font-size: 12px;
+  line-height: 14.06px;
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+}
+
+.isMVT {
+  text-transform: uppercase
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.statusOnline {
+  color: #2EE5AC;
+}
+
+.statusStopped {
+  color: var(--red-600);
+}
+
+.statusDraft {
+  color: var(--gray-blue);
+}
+
+.statusPaused {
+  color: var(--red-200);
+}
+
+.resultsButton {
+  background-color: #2EE5AC;
+
+}
+
+.finalizeButton {
+  background-color: #7D7D7D;
+}
+
+.emptyContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.text {
+  display: flex;
+  margin: 149px auto auto auto;
+  justify-content: center;
+  width: 810px;
+  min-height: 70px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btnReset {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 14.63px;
+  font-size: 12px;
+  background-color: #2EE5AC;
+  color: white;
+  width: 95px;
+  min-height: 30px;
+  border-radius: 10px;
+
+}
